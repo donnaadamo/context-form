@@ -1,18 +1,13 @@
 import React from 'react';
 import "./styles.css";
-import Button from 'react-bootstrap/Button';
-import PropTypes from 'prop-types';
 
-const ButtonCustom = ({ btn_config, onClick }) => {
+const Input = ({ label, type, name, handleOnChange, className }) => {
     return (
-        <Button variant={btn_config.variant} size={btn_config.size} onClick={onClick} block >{btn_config.description}</Button>
+        <div className="inputcomponent">
+            <label className="label">{label}</label>
+            <input type={type} name={name} onChange={handleOnChange} className={className}/>
+        </div>
     )
 }
 
-Button.propTypes = {
-    description: PropTypes.string.isRequired,
-    variant: PropTypes.string,
-    size: PropTypes.string
-}
-
-export default ButtonCustom;
+export default Input;

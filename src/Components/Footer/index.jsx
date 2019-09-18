@@ -3,14 +3,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "./styles.css";
 
-const Header = () => {
+const Footer = () => {
     return (
         <Row className="header">
             <Col md={12} >
-                <img src="logo.jpg" alt=""/>
+                PORTAL | PRODUCCION | V1
             </Col>
         </Row>
     )
 };
 
-export default Header;
+export default Footer;
