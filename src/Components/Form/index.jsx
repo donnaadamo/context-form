@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Input from '../Input';
 import ButtonCustom from '../Button';
+import { GLOBAL } from '../../Config/global';
 
 const Form = () => {
     const [userInput, setUserInput] = useReducer(
@@ -40,21 +41,21 @@ const Form = () => {
 
     return (
         <div className="fContainer">
-            <p className="m-0 formTitle mb-2">Registro de usuario nuevo</p>
+            <p className="m-0 formTitle mb-2">{GLOBAL.FORM.TITLE}</p>
             <Row>
                 <Col md={6}>
-                    <Input label="Nombre" type="text" className="form-control" name="name" value={userInput.name} handleOnChange={handleChange} />
+                    <Input label={GLOBAL.FORM.NAME} type="text" className="form-control" name="name" value={userInput.name} handleOnChange={handleChange} />
                 </Col>
                 <Col md={6}>
-                    <Input label="Apellidos" type="text" className="form-control" name="lastName" value={userInput.lastName} handleOnChange={handleChange} />
+                    <Input label={GLOBAL.FORM.LAST_NAME} type="text" className="form-control" name="lastName" value={userInput.lastName} handleOnChange={handleChange} />
                 </Col>
             </Row>
-            <Input label="Email *" type="email" className="form-control" name="email" value={userInput.email} handleOnChange={handleChange} />
-            <Input label="Contraseña *" type="password" className="form-control" name="password" value={userInput.password} handleOnChange={handleChange} />
-            <p className="form-text text-muted notes m-1">> Incluir un número y una letra mayúscula</p>
-            <Input label="Confirmar contraseña *" type="password" className="form-control" />
-            <p className="form-text text-muted notes mb-1">> Repetir contraseña</p>
-            <input type="checkbox" /><span className="terms">He leído los términos y condiciones de uso</span>
+            <Input label={GLOBAL.FORM.EMAIL} type="email" className="form-control" name="email" value={userInput.email} handleOnChange={handleChange} />
+            <Input label={GLOBAL.FORM.PASSWORD} type="password" className="form-control" name="password" value={userInput.password} handleOnChange={handleChange} />
+            <p className="form-text text-muted notes m-1">{GLOBAL.FORM.NOTE_1}</p>
+            <Input label={GLOBAL.FORM.PASSWORD_2} type="password" className="form-control" />
+            <p className="form-text text-muted notes mb-1">{GLOBAL.FORM.NOTE_2}</p>
+            <input type="checkbox" /><span className="terms">{GLOBAL.FORM.TERMS}</span>
             <ButtonCustom btn_config={submitButtonSettings} handleOnClick={handleSubmit} />
             {/* <ButtonCustom btn_config={submitButtonSettings} handleOnClick={showUser} /> */}
         </div>
