@@ -1,0 +1,10 @@
+.rolNav{
+    font-size: 0.8rem;
+}
+.nav-link{
+    color: black;
+    font-weight: bolder;
+}
+.nav-link:hover,.nav-link.selected{
+    color: #00842B;
+}

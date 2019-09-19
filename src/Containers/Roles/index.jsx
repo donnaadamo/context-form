@@ -12,6 +12,7 @@ import UserIcon from '../../Resources/images/user-solid.svg';
 import { GLOBAL } from '../../Config/global';
 import RolInfo from '../../Components/RolInfo';
 import { RolProvider } from '../../Store/RolContext';
+import Nav from '../../Components/Nav';
 
 const Roles = () => {
 
@@ -21,7 +22,7 @@ const Roles = () => {
             <Header />
             <Row>
                 <Col md={3} className="d-flex justify-content-center mt-3">
-                    APP | ROL
+                    <Nav />
                 </Col>
                 <Col md={9}>
                 </Col>
@@ -39,7 +40,9 @@ const Roles = () => {
                 </Col>
             </Row>
             <p className="text-center my-5">Dependiendo el rol elegido los permisos a los que podrás acceder serán diferentes.</p>
+            <Row>
             <Footer info={GLOBAL.FOOTER.DATA_ROLES}/>
+            </Row>
         </Container >
         </RolProvider>
     );

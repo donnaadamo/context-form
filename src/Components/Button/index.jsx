@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
 
 const ButtonCustom = ({ btn_config, handleOnClick }) => {
+    console.log(btn_config)
     return (
         <Button variant={btn_config.variant} size={btn_config.size} onClick={handleOnClick} block >{btn_config.description}</Button>
     )

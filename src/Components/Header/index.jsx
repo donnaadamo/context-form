@@ -7,7 +7,9 @@ const Header = () => {
     return (
         <Row className="header">
             <Col md={12} >
-                <img src="logo.jpg" alt=""/>
+                <div className="logo">
+                    <img src="logo.jpg" alt="" />
+                </div>
             </Col>
         </Row>
     )

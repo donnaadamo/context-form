@@ -3,3 +3,9 @@
     height: 60px;
     box-shadow: 0px 6px 3px 0px rgba(216,216,216,0.7);
 }
+.logo{
+    margin-left: 8%;
+}
+.logo img{
+    width: 8%;
+}
