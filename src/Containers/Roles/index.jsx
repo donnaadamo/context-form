@@ -10,10 +10,13 @@ import Rol from '../../Components/Rol';
 import AdminIcon from '../../Resources/images/user-lock-solid.svg';
 import UserIcon from '../../Resources/images/user-solid.svg';
 import { GLOBAL } from '../../Config/global';
+import RolInfo from '../../Components/RolInfo';
+import { RolProvider } from '../../Store/RolContext';
 
 const Roles = () => {
 
     return (
+        <RolProvider>
         <Container fluid={true}>
             <Header />
             <Row>
@@ -32,11 +35,13 @@ const Roles = () => {
                     </div>
                 </Col>
                 <Col md={3} className="col3">
+                    <RolInfo />
                 </Col>
             </Row>
             <p className="text-center my-5">Dependiendo el rol elegido los permisos a los que podrás acceder serán diferentes.</p>
             <Footer info={GLOBAL.FOOTER.DATA_ROLES}/>
         </Container >
+        </RolProvider>
     );
 }
 

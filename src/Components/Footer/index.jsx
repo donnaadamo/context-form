@@ -5,10 +5,10 @@ import "./styles.css";
 
 const Footer = ({ info }) => {
     return (
-        <Row className="header">
-            <Col md={12} >
+        <Row className="footer">
+            <div className="p-4 ml-5 footer-info">
                 {info}
-            </Col>
+            </div>
         </Row>
     )
 };

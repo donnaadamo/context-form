@@ -12,7 +12,7 @@ const Rol = ({ icon, rol }) => {
     return (
         <div className="rol-container p-5">
             <img src={icon} alt="" className="icons"/>
-            <p className="mt-4 rol">{rol}</p>
+            <p className="my-4 rol">{rol}</p>
             <ButtonCustom btn_config={submitButtonSettings} className="rol-button"/>
         </div>
     )
