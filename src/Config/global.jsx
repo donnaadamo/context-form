@@ -11,7 +11,8 @@ const GLOBAL = {
       TERMS: "He leído los terminos y condiciones de uso"
     },
     FOOTER: {
-        DATA: "PORTAL | PRODUCCION | V1.2.1"
+        DATA_HOME: "PORTAL | PRODUCCION | V1.2.1",
+        DATA_ROLES: "PORTAL | PRODUCCION | V1.2.1 | ROL: Administrador"
       },
   };
   

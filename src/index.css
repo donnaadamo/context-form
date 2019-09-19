@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Gotham';
+    font-size: normal;
+    src: url('./Resources/fonts/Gotham/Gotham-Light.otf');
+}
+
+body {
+    font-family: 'Gotham';
+}

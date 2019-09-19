@@ -1,13 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from '../Components/Header';
+import Header from '../../Components/Header';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "./styles.css";
-import Footer from '../Components/Footer';
-import { PersonProvider } from '../Store/PersonContext';
-import Form from '../Components/Form';
+import Footer from '../../Components/Footer';
+import { PersonProvider } from '../../Store/PersonContext';
+import Form from '../../Components/Form';
+import { GLOBAL } from '../../Config/global';
 
 const Home = () => {
 
@@ -27,7 +28,7 @@ const Home = () => {
           <Col md={2}>
           </Col>
         </Row>
-        <Footer />
+        <Footer info={GLOBAL.FOOTER.DATA_HOME}/>
       </Container >
     </PersonProvider>
   );
