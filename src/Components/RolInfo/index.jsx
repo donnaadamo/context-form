@@ -6,9 +6,9 @@ const RolInfo = () => {
     const [rol, setRol] = useContext(RolContext);
 
     return (
-        <div className="rolInfo-container float-right">
+        <div className="d-flex justify-content-md-end justify-content-sm-center">
             {rol.map(rol => (
-                <div>
+                <div className="rolInfo-container">
                     <div className="rolInfo-title p-2">
                         <p className="m-0 ml-3">Rol {rol.name}</p>
                     </div>

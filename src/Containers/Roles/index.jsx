@@ -30,7 +30,7 @@ const Roles = () => {
             <Row>
                 <Col md={{ span: 6, offset: 3 }} className="col2">
                     <h4 className="text-center mt-3 mb-5">Elegir el rol para entrar a la plataforma</h4>
-                    <div className="rol-selection">
+                    <div className="rol-selection d-flex justify-content-md-around flex-md-row flex-sm-column ">
                         <Rol rol="Rol administrador" icon={AdminIcon} />
                         <Rol rol="Rol usuario" icon={UserIcon} />
                     </div>

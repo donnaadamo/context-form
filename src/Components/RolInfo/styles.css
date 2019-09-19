@@ -16,3 +16,10 @@
 .rolInfo-features,li{
     font-size: 0.8rem;
 }
+
+@media (max-width: 767px) {
+    .rolInfo-container {
+      margin-top: 10%;
+      width: 100%;
+    }
+}
